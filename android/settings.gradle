@@ -1,0 +1,3 @@
+rootProject.name = 'BarnaclesNative'
+
+include ':app'
