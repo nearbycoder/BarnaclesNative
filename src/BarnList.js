@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import InfiniteScrollView from 'react-native-infinite-scroll-view';
-import { ListView, RefreshControl } from 'react-native';
+import { ListView, RefreshControl, Linking } from 'react-native';
 import { NativeRouter, Route, Link } from 'react-router-native';
 import {
   PapayaView,
