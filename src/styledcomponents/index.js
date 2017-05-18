@@ -40,6 +40,10 @@ export const BarnListItemScore = styled.Text`
   padding: 3 5;
   border-radius: 10;
   text-align: center;
+  shadow-color: grey;
+  shadow-radius: .8;
+  shadow-opacity: .4;
+  shadow-offset: 1 0;
 `;
 
 export const BarnListTagsView = styled.View`
@@ -56,6 +60,10 @@ export const BarnListItemTag = styled.Text`
   margin-right: 4;
   font-size: 14;
   border-radius: 10;
+  shadow-color: grey;
+  shadow-radius: .8;
+  shadow-opacity: .4;
+  shadow-offset: 1 0;
 `;
 
 export const BarnListItemRight = styled.TouchableOpacity`
@@ -72,17 +80,27 @@ export const BarnListItemAuthor = styled.Text`
 export const BarnListItemTitle = styled.Text`
   font-size: 18;
   color: tomato;
+  text-shadow-color: papayawhip;
+  text-shadow-radius: .8;
+  text-shadow-offset: 1 0;
 `;
 
 export const BarnListItemSubTitle = styled.Text`
   font-size: 12;
   color: grey;
+  text-shadow-color: papayawhip;
+  text-shadow-radius: .8;
+  text-shadow-offset: 1 0;
 `;
 
 export const BarnListNavView = styled.View`
   background-color: papayawhip;
   flex: 0.08;
   padding: 2;
+  shadow-color: grey;
+  shadow-radius: .8;
+  shadow-opacity: .4;
+  shadow-offset: 2 0;
 `;
 
 export const BarnListNavViewList = styled.View`
@@ -94,7 +112,11 @@ export const BarnListNavViewList = styled.View`
 
 export const BarnListNavViewListButton = styled(Link)`
   padding: 10 20;
-  border-radius: 5;
+  border-radius: 2;
+  shadow-color: grey;
+  shadow-radius: .8;
+  shadow-opacity: .4;
+  shadow-offset: 1 0;
   ${props => props.isExact && `
     background-color: #ffffff!important;`}
 `;
