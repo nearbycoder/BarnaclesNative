@@ -117,7 +117,7 @@ export const BarnListNavViewList = styled.View`
 export const BarnListNavViewListButton = styled(Link)`
   padding: 10 20;
   border-radius: 1;
-  background-color: #E67156!important;
+  background-color: #97CDC6!important;
   shadow-color: grey;
   shadow-radius: .8;
   shadow-opacity: .4;
