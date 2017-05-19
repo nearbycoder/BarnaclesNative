@@ -1,4 +1,5 @@
 # Barnacl.es React Native Application
+![Barnacl.es React Native](example_images/example.jpg?raw=true "Barnacl.es React Native")
 
 ## Architecture Notes
 ### Framework
