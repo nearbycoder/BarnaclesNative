@@ -2,26 +2,35 @@ import styled from 'styled-components/native';
 import { Link } from 'react-router-native';
 
 export const PapayaView = styled.View`
-  background-color: papayawhip;
   flex: 1;
 `;
 
+export const StatusBar = styled.View`
+  background-color: #FBFCFF;
+  flex: 0.03;
+  shadow-color: grey;
+  shadow-radius: .8;
+  shadow-opacity: .4;
+  shadow-offset: 2 0;
+  z-index: 100;
+`;
+
 export const BarnActivityIndicator = styled.ActivityIndicator`
-  margin-top: 20;
   background-color: white;
-  flex: 0.92;
+  flex: 0.91;
+
 `;
 
 export const BarnListView = styled.ListView`
-  background-color: white;
-  flex: 0.92;
-  margin-top: 20;
-  padding: 0 10;
+  background-color: #F4F4F9;
+  flex: 0.91;
 `;
 
 export const BarnViewDivider = styled.View`
   flex: 1;
   flex-direction: row;
+  padding: 0 10;
+  background-color: #F4F4F9;
 `;
 
 export const BarnListItemLeft = styled.View`
@@ -36,7 +45,7 @@ export const BarnListItemTouchable = styled.TouchableOpacity`
 export const BarnListItemScore = styled.Text`
   color: papayawhip;
   font-size: 12;
-  background-color: tomato;
+  background-color: #E76F51;
   padding: 3 5;
   border-radius: 10;
   text-align: center;
@@ -53,13 +62,14 @@ export const BarnListTagsView = styled.View`
 `;
 
 export const BarnListItemTag = styled.Text`
-  background-color: papayawhip;
-  color: #D699A1;
-  padding: 3 4;
   margin-top: 4;
   margin-right: 4;
-  font-size: 14;
+  color: papayawhip;
+  font-size: 12;
+  background-color: #2A9D8F;
+  padding: 3 5;
   border-radius: 10;
+  text-align: center;
   shadow-color: grey;
   shadow-radius: .8;
   shadow-opacity: .4;
@@ -74,27 +84,21 @@ export const BarnListItemRight = styled.TouchableOpacity`
 
 export const BarnListItemAuthor = styled.Text`
   font-size: 12;
-  color: #D699A1;
+  color: #586F7C;
 `;
 
 export const BarnListItemTitle = styled.Text`
   font-size: 18;
   color: tomato;
-  text-shadow-color: papayawhip;
-  text-shadow-radius: .8;
-  text-shadow-offset: 1 0;
 `;
 
 export const BarnListItemSubTitle = styled.Text`
   font-size: 12;
   color: grey;
-  text-shadow-color: papayawhip;
-  text-shadow-radius: .8;
-  text-shadow-offset: 1 0;
 `;
 
 export const BarnListNavView = styled.View`
-  background-color: papayawhip;
+  background-color: #FBFCFF;
   flex: 0.08;
   padding: 2;
   shadow-color: grey;
@@ -112,15 +116,18 @@ export const BarnListNavViewList = styled.View`
 
 export const BarnListNavViewListButton = styled(Link)`
   padding: 10 20;
-  border-radius: 2;
+  border-radius: 1;
+  background-color: #E67156!important;
   shadow-color: grey;
   shadow-radius: .8;
   shadow-opacity: .4;
   shadow-offset: 1 0;
+  
   ${props => props.isExact && `
-    background-color: #ffffff!important;`}
+    background-color: #2F9C8E!important;
+  `}
 `;
 
 export const ButtonText = styled.Text`
-  color: tomato;
+  color: #F4F4F9;
 `;

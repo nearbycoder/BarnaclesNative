@@ -3,6 +3,7 @@ import InfiniteScrollView from 'react-native-infinite-scroll-view';
 import { ListView, RefreshControl, Linking } from 'react-native';
 import { NativeRouter, Route, Link } from 'react-router-native';
 import {
+  StatusBar,
   PapayaView,
   BarnListView,
   BarnViewDivider,
@@ -130,6 +131,7 @@ export default class BarnList extends Component {
   render() {
     return (
       <PapayaView>
+        <StatusBar />
         {this.state.isFetching
           ? <BarnActivityIndicator color="tomato" size="large" />
           : <BarnListView
